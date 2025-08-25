@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/kakkky/go-prompt/internal/debug"
+	"github.com/kakkky/go-prompt/internal_pkgs/debug"
 )
 
 // Executor is called when user input something text.

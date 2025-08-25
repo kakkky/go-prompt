@@ -8,7 +8,7 @@ import (
 	"runtime"
 
 	prompt "github.com/kakkky/go-prompt"
-	"github.com/kakkky/go-prompt/internal/debug"
+	"github.com/kakkky/go-prompt/internal_pkgs/debug"
 )
 
 var (

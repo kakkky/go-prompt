@@ -3,7 +3,7 @@ package prompt
 import (
 	"strings"
 
-	"github.com/kakkky/go-prompt/internal/debug"
+	"github.com/kakkky/go-prompt/internal_pkgs/debug"
 )
 
 // Buffer emulates the console buffer.

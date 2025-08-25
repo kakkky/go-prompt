@@ -8,7 +8,7 @@ import (
 	"syscall"
 
 	prompt "github.com/kakkky/go-prompt"
-	"github.com/kakkky/go-prompt/internal/term"
+	"github.com/kakkky/go-prompt/internal_pkgs/term"
 )
 
 func main() {
