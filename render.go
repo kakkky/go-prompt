@@ -137,7 +137,7 @@ func (r *Render) renderCompletion(buf *Buffer, completions *CompletionManager) {
 		} else {
 			r.out.SetColor(r.suggestionTextColor, r.suggestionBGColor, false)
 		}
-		r.out.WriteStr(formatted[i].Text)
+		r.out.WriteStr(formatted[i].DisplayText)
 
 		if i == selected {
 			r.out.SetColor(r.selectedDescriptionTextColor, r.selectedDescriptionBGColor, false)

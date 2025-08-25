@@ -24,6 +24,7 @@ var (
 // Suggest is printed when completing.
 type Suggest struct {
 	Text        string
+	DisplayText string
 	Description string
 }
 
@@ -159,7 +160,7 @@ func formatSuggestions(suggests []Suggest, max int) (new []Suggest, width int) {
 
 	left := make([]string, num)
 	for i := 0; i < num; i++ {
-		left[i] = suggests[i].Text
+		left[i] = suggests[i].DisplayText
 	}
 	right := make([]string, num)
 	for i := 0; i < num; i++ {
@@ -173,7 +174,7 @@ func formatSuggestions(suggests []Suggest, max int) (new []Suggest, width int) {
 	right, rightWidth := formatTexts(right, max-leftWidth, rightPrefix, rightSuffix)
 
 	for i := 0; i < num; i++ {
-		new[i] = Suggest{Text: left[i], Description: right[i]}
+		new[i] = Suggest{DisplayText: left[i], Description: right[i]}
 	}
 	return new, leftWidth + rightWidth
 }
